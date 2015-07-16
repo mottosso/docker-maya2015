@@ -4,7 +4,7 @@ MAINTAINER marcus@abstractfactory.io
  
 # Download and unpack distribution first, Docker's caching
 # mechanism will ensure that this only happens once.
-RUN wget http://download.autodesk.com/us/support/files/maya_2015_service_pack_5/Autodesk_Maya_2015_SP5_English_Linux.tgz -O maya.tgz && \
+RUN wget http://download.autodesk.com/us/support/files/maya_2015_service_pack_3/Autodesk_Maya_2015_SP3_English_Linux.tgz -O maya.tgz && \
     mkdir /maya && tar -xvf maya.tgz -C /maya && \
     rm maya.tgz
 
